@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Svelte</title>
+
+    <style>
+        @font-face {
+            font-family: 'Instrument Serif';
+            src: url('public/InstrumentSerif-Regular.ttf') format('truetype');
+        }
+
+        html {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+
+            color: white;
+            font-family: 'Instrument Serif';
+            background-image: url("public/crh-building-hero.jpg");
+            background-size: auto 100%;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button {
+            font-family: 'Instrument Serif';
+            color: white;
+            background-color: black;
+            border: none;
+        }
+        button:hover {
+            background-color: #333;
+        }
+        button:active {
+            background-color: #555;
+        }
+        #app {
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .popup {
+            text-align: center;
+            padding: 100px;
+            border-radius: 12px;
+
+            flex-grow: 1;
+            margin: 30px;
+
+            color: white;
+            background: linear-gradient(#82828277, #00000077 17%, #00000077 30%, #75757577 90%, #3b3b3b77);
+        }
+
+        /* Background image resolution is 1600:850, this is to scale the background image well */
+        @media (min-aspect-ratio: 1600/850) {
+            body {
+                background-size: 100% auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
